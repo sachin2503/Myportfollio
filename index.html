@@ -102,6 +102,23 @@ footer a:hover{
     opacity: 0.75;
     color: rgb(255, 255, 255);
 }
+
+    .loader {
+ position: absolute;
+ margin-top: 20%;
+ margin-left: 42%;
+  border: 6px solid #f3f3f3; /* Light grey */
+  border-top: 6px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 </style>
 
 <body>
@@ -117,6 +134,8 @@ footer a:hover{
        
     </nav> 
    <div class="container">
+        <div class="loader">
+        </div>
     <img src="sachin2.png" alt="This is Sachin Durgude">
 
     <div class="my-data">
@@ -140,5 +159,22 @@ footer a:hover{
     <a class ="copyright" href="#">&copy; 2023  |  Web developer</a>
 </div>
 </footer>
+        <script>
+
+        
+document.onreadystatechange = function() {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                  "body").style.visibility = "hidden";
+                document.querySelector(
+                  ".loader").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                  ".loader").style.display = "none";
+                document.querySelector(
+                  "body").style.visibility = "visible";
+            }
+        };
+    </script>
 </body>
 </html>
