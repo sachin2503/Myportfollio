@@ -11,6 +11,7 @@
 </head>
 
 <style>
+    @media all and  (min-width:500px){
 
     img{
         position: relative;
@@ -24,7 +25,7 @@
         width: 100vw;
         height: 95vh;
         display: flex;
-        /* background-image: url(./Images/world1.jpg); */
+        background-image: url(world1.jpg);
     
     }
     
@@ -93,23 +94,87 @@ opacity: 0.6;
 font-size: 1.25rem;
 padding: 5px;
 }
+    }
 
-    .loader {
- position: absolute;
- margin-top: 20%;
- margin-left: 42%;
-  border: 6px solid #f3f3f3; /* Light grey */
-  border-top: 6px solid #3498db; /* Blue */
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  animation: spin 2s linear infinite;
+    @media all and  (max-width:500px){
+
+        .container{
+            
+        position: relative;
+        width: 94vw;
+        background-color: black;
+        height: 90vh; 
+    }
+    .nav {
+    padding-left: 0%;
+    background-color: #333;
+    overflow: hidden;
 }
 
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+.nav a:hover{
+    background-color: white;
+    opacity: 0.75;
+    color: black;
 }
+.nav a{
+    float: left;
+    text-align: center;
+    color: white;
+    padding: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.69rem;
+}
+.parent-container{
+    position: relative;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* margin-left: 35%;
+    margin-top: 2%; */
+    margin-top: -7.6%;
+    color: white;
+    width: 85%;
+    height: 300px;
+}
+
+.child1{
+    margin: 10px;
+    padding: 5px;
+    width: 100%;
+    height: 30px;
+    border: 5px white solid;
+    border-radius: 10px;
+}
+#message{
+    padding-bottom: 100px;
+}
+
+h1{padding-top: 10px;
+    font-size: 3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.Btn{
+    cursor: pointer;
+    margin-top: 15px;
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color : aqua;
+    opacity: 0.75;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+}
+.child1::placeholder{
+color: black;
+opacity: 0.6;
+font-size: 1.25rem;
+padding: 5px;
+}
+
+    }
 </style>
 <body>
     <nav class="nav">
@@ -123,9 +188,6 @@ padding: 5px;
        
     </nav> 
     <div class="container">
-                <div class="loader">
-        </div>
-    <img src="world.jpg" alt="">
     <div class="parent-container">
         <h1>GET IN TOUCH</h1>
         <p>📞Phone: 8263019324</p>
@@ -148,20 +210,6 @@ padding: 5px;
     </div>
 
     <script> 
-
-        document.onreadystatechange = function() {
-            if (document.readyState !== "complete") {
-                document.querySelector(
-                  "body").style.visibility = "hidden";
-                document.querySelector(
-                  ".loader").style.visibility = "visible";
-            } else {
-                document.querySelector(
-                  ".loader").style.display = "none";
-                document.querySelector(
-                  "body").style.visibility = "visible";
-            }
-        };
     
     const sendBtn = document.querySelector(".Btn");
     // const name = document.querySelector("#name");
