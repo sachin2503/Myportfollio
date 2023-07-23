@@ -9,6 +9,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="logo/favicon/favicon-16x16.png">
 </head>
 <style>
+    @media all and  (min-width:500px){
     .nav {
     padding-left: 64%;
     background-color: #333;
@@ -101,6 +102,95 @@ footer a:hover{
     background-color: rgb(8, 0, 0);
     opacity: 0.75;
     color: rgb(255, 255, 255);
+}
+    }
+    @media all and  (max-width:500px){
+         .nav {
+    padding-left: 0%;
+    background-color: #333;
+    overflow: hidden;
+}
+
+.nav a:hover{
+    background-color: white;
+    opacity: 0.75;
+    color: black;
+}
+.nav a{
+    float: left;
+    text-align: center;
+    color: white;
+    padding: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.69rem;
+}
+
+.container{
+    background-color: rgb(188, 238, 224);
+    background-image: linear-gradient(#33CCA3,#529B9F);
+        /* position: relative; */
+        width: 92vw;
+        height: 102vh;
+        /* display: flex; */
+        /* background-image: url(./Images/world1.jpg); */
+}
+    .my-data{
+        margin-top: 2rem;
+        margin-left: 3%;
+       line-height: 15px;
+       font-family: cursive;
+       
+    }
+
+img{
+    margin-top: 2rem;
+    width: 80%;
+
+}
+#field{
+    color: blue;
+    opacity: 0.65;
+    font-size: 1.75rem;
+}
+#Btn{
+    cursor: pointer;
+    padding: 5px;
+    font-family:  'league spartan', sans-serif;
+    background-color: blue;
+    opacity: 0.6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+footer a {
+    
+    text-decoration: none;
+    padding: 6px;
+    font-size: 0.5rem;
+    text-align: end;
+    float: left;
+    color: rgb(0, 0, 0);
+}
+.copyright{
+    float: right;
+}
+
+footer {
+    margin-top: 15px;
+   text-align: center;
+   margin-left: 15px;
+    overflow: hidden;
+}
+footer a:hover{
+    background-color: rgb(8, 0, 0);
+    opacity: 0.75;
+    color: rgb(255, 255, 255);
+}
 }
 
     .loader {
