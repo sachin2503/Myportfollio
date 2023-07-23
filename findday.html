@@ -7,6 +7,7 @@
 </head>
 
 <style>
+  @media all and  (min-width:500px){
     *,
 *::before,
 *::after{
@@ -131,6 +132,135 @@ footer img{
   border-radius: 5px;
  align-items: center;
 }
+  }
+
+  @media all and  (max-width:500px){
+    .container{
+  width: 90%;
+  max-height: 100%;
+}
+
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'league spartan', sans-serif;
+}
+body {
+ width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(231deg, rgba(22,6,40,1 )0%, rgba(52,28,79,1) 50%, rgba(88,7,125,1)100%);
+ 
+}
+h1{
+  color: white;
+  opacity: 0.75;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1.2;
+  /* font-size: medium; */
+  margin: 10px;
+}
+
+
+.display-container{
+  position: relative;
+  background-color: rgb(102, 14, 140);
+  border-radius: 1rem;
+  border-bottom: 0.35rem solid violet;
+  margin: 1rem 0;
+  padding-top: 0.35rem;
+
+}
+
+.display{
+    position: relative;
+  text-align: center;
+   width: 100%;
+   background-color: transparent;
+   font-weight: 600;
+   outline: none;
+   border: none;
+   color: yellow;
+   padding: 1.15rem 1rem ;
+   font-size: 2rem;
+   line-height: 30px;
+   letter-spacing: 1px;
+   padding-right: 3.25rem;
+   border: none;
+}
+.display::placeholder{
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 1.5rem;
+  font-size: 2rem;
+  line-height: 30px;
+  color: yellow;
+  opacity: 0.65;
+  text-transform: uppercase;
+  transform: translateY(-50%);
+}
+
+.input-container{
+  width: 100%;
+  background-color: rgb(102, 14, 140);
+  border-radius: 1rem;
+  padding: 2rem;
+  border-bottom: 0.35rem solid violet;
+}
+
+.input-data{
+   width: 100%;
+   background-color: rgb(51, 10, 75);
+   font-weight: 600;
+   outline: none;
+   border: none;
+   color: yellow;
+   padding: 1.15rem 1rem ;
+   font-size: 1.5rem;
+   line-height: 30px;
+   margin:  0px 0px 20px  0px  ;
+   border-radius: 15px;
+   letter-spacing: 1px;
+   padding-right: 3.25rem;
+   border: none;
+}
+.generateButton{
+  cursor: pointer;
+  width: 100%;
+  padding: 1rem 0;
+  background-color: violet;
+  text-align: center;
+  border-radius: 0.75rem;
+  border-bottom: 0.35rem solid yellow;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.25rem;
+ }
+
+ .about{
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+}
+
+footer img{
+  border-radius: 5px;
+ align-items: center;
+}
+
+  }
 </style>
 <body>
     <div class="container">
