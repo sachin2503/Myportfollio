@@ -11,25 +11,13 @@
 </head>
 
 <style>
-@media all and  (min-width:500px){
-
-    img{
-        position: relative;
-        width: 98%;
-        height: 100%;
-    }
-
+    @media all and  (min-width:500px){
     .container{
-        
-        position: absolute;
+        position: relative;
         width: 100vw;
-        height: 95vh;
-        display: flex;
-        background-image: url(./world1.jpg);
-    
+        height: 95vh; 
     }
-    
-.nav {
+    .nav {
     padding-left: 64%;
     background-color: #333;
     overflow: hidden;
@@ -50,51 +38,162 @@
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.25rem;
 }
-.parent-container{
+    .table{
+        
+        text-align: left;
+        width: 100%;
+    }
+
+    .child1{
+        position: absolute;
+        background-color: rgb(230, 97, 48);
+        margin-left: 65%;
+        margin-top: 15%;
+        width: 25%;
+        height: 60%;
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: white;
+        border-radius: 1.5rem;
+        
+    }
+    img{
+        position: absolute;
+        align-items: center;
+        width: 50%;
+        margin-left: -25%;
+      margin-top: -27%;
+        border-radius: 50%;
+    }
+    .grand-child1{
+        /* position: absolute; */
+        margin-top: 40%;
+        text-align: center;
+        
+    }
+    h1{
+        line-height: 22px;
+    }
+    .logo {
+    border-radius: 5px;
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: 1%;
+}
+
+#linkedIn1{
+    margin-left: -17%;
+   
+}
+#twitter1{
+    margin-left: -5%;
+    border-radius: 50%;
+    
+}
+
+#instagram1{
+    margin-left: 7%;
+    
+}
+
+.logo1{
+    margin-left: 5px;
+    border-radius: 5px;
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: 1%;
+}
+
+#linkedIn{
+    margin-left: 0%;
+   
+}
+#twitter{
+    margin-left: 10%;
+    border-radius: 50%;
+    
+}
+
+#instagram{
+    margin-left: 20%;
+    
+}
+.child1 p{
+      padding: 0px 60px 0px 60px;
+      line-height: 25px;
+}
+
+.child2{
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        margin-left: 33%;
+        margin-top: 15%;
+        width: 25%;
+        height: 60%;
+        line-height: 32px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: rgb(0, 0, 0);
+    }
+     h3{
+        font-size: 2rem;
+        
+    }
+    .child2 a{
+
+        padding: 15px;
+        font-size: 2rem;
+        text-decoration: none;
+        
+        
+    }
+    .child2 button{
+        border: 1.5px solid rgb(230, 97, 48);
+       border-radius: 15px;
+    }
+    .child2 button:hover{
+        background-color: rgb(246, 0, 0);
+        
+    }
+    .child2 a:hover{
+        color: white;
+    }
+
+    .child3{
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        margin-left: 4%;
+        margin-top: 15%;
+        width: 25%;
+        height: 65%;
+        line-height: 32px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: rgb(0, 0, 0);
+    }
+
+    .heading{
+        position: absolute;
+      text-align: center;
+      margin-top: 8%;
+      margin-left: 41%;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 3.5rem;
+      color: rgb(44, 206, 206);
+      opacity: 0.8;
+      
+    }
+
+    .sub-heading{
     position: absolute;
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-left: 35%;
-    margin-top: 2%;
-    color: white;
-}
+    margin-top: 11.5%;
+    margin-left: 41%;
+    font-size: 1.1rem;
 
-.child1{
-    margin: 10px;
-    padding: 5px;
-    width: 100%;
-    height: 30px;
-    border: 5px white solid;
-    border-radius: 10px;
-}
-#message{
-    padding-bottom: 100px;
-}
 
-h1{
-    font-size: 3.59rem;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-.Btn{
-    cursor: pointer;
-    margin-top: 15px;
-    padding: 10px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color : aqua;
-    opacity: 0.75;
-    font-weight: 600;
-    font-size: 1.25rem;
-    color: rgb(0, 0, 0);
-    border: none;
-    border-radius: 5px;
-}
-.child1::placeholder{
-color: black;
-opacity: 0.6;
-font-size: 1.25rem;
-padding: 5px;
-}
     }
+}
 @media all and  (max-width:500px){
 
     .container{
